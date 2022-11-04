@@ -12,16 +12,16 @@ export default function Home() {
   const [sizeOfPizza, setSizeOfPizza] = useState(160)
   const [hydration, setHydration] = useState(60)
 
-  const onChangeNumberOfPizzas = (event: React.ChangeEvent<HTMLInputElement>) =>{
-    setNumberOfPizzas(parseInt(event.target.value))
+  const onChangeNumberOfPizzas = (e: any) =>{
+    setNumberOfPizzas(parseInt(e.target.value))
   }
 
-  const onChangeSizeOfPizza = (event: React.ChangeEvent<HTMLInputElement>) =>{
-    setSizeOfPizza(parseInt(event.target.value))
+  const onChangeSizeOfPizza = (e: any) =>{
+    setSizeOfPizza(parseInt(e.target.value))
   }
 
-  const onChangeHydration = (event: React.ChangeEvent<HTMLInputElement>) =>{
-    setHydration(parseInt(event.target.value))
+  const onChangeHydration = (e: any) =>{
+    setHydration(parseInt(e.target.value))
   }
 
   const flour = useMemo(
